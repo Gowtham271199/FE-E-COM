@@ -23,7 +23,7 @@ const ShopContextProvider =(props)=>{
             fetch('https://be-e-com.onrender.com/getcart',{
                 method:'POST',
                 headers:{
-                    Accept:'application/form-data',
+                    Accept:'application/json',
                     'auth-token':`${localStorage.getItem('auth-token')}`,
                     'Content-Type':'application/json',
                 },
